@@ -16,14 +16,18 @@
 
 ## Features
 - Our project consists of three main modules that enable JetBot to park autonomously in a designated parking area. These modules; They are Number Recognition Module, Road Tracking Module and Parking Module. In addition to these modules, there is a 'Red Line Violation Module' that detects whether red lines have been crossed. The operation and integration of each module has been carefully planned, implemented and tested to achieve the goal of the project.
-# Number Recognition (Image Processing) Module
+
+### Number Recognition (Image Processing) Module
 This module is designed to detect numbers in images captured by the CSI camera. Initially, models were trained with different methods such as TensorFlow, PyTorch and AlexNet, and although the test and validation values ​​of these models were good, it was observed that they did not provide the expected performance in real-time number recognition. To solve this problem, the 'Pytesseract' module, which uses 'OCR (Optical Character Recognition) technology, was switched to. ‘Pytesseract’ is integrated with Jupyter Notebook by running on ‘Docker’. The images captured by the camera were converted to gray scale and transmitted to the model, and the number read on the output was obtained.
-# Black Line Tracking (Road Tracking) Module
+### Black Line Tracking (Road Tracking) Module
 This module was developed so that JetBot can follow a specific path. By using the 'Road Following' model among the demo projects in the notebook folder that comes with the JetBot image, JetBot was enabled to follow the black line passing through the middle of the platform. Using the training codes in the demo project, JetBot's own path tracking model was trained and operated successfully. This module plays a critical role in ensuring that the vehicle can proceed on the desired route.
-# Parking Module
+### Parking Module
 The parking area was considered as a road following task and therefore a 'Road Following' based model training method was used. The parking model for entering the parking area was trained several times and in the final stage, it was converted to 'TRT' file format and implemented. This module ensures that the vehicle is parked safely in the parking area that it has determined belongs to it.
-# Red Line Violation Module
+### Red Line Violation Module
 The Red Line Violation Module is designed to detect whether the JetBot violates red boundary lines in the parking area. This module detects red lines marking parking area boundaries using 'TCS34725' color sensors. When JetBot passes over a red line, sensors detect this violation and JetBot instantly sends a penalty point (-1 point) to the smartphone.
+
+- Before the application starts running, the path tracking model is loaded into JetBot. This installation process takes a certain amount of time. After the model is loaded, the software starts waiting for license plate input from the mobile application. When the license plate input is received, JetBot moves a certain distance and turns left using the road tracking software. After completing the turn, it reads the number in front of it with the help of number recognition software and compares this number with the license plate input. If the number read matches the plate assigned to it, it loads the parking model and moves to the parking function. During this process, red sensors are activated and send a violation score (-1 point) to the mobile application in case of parking line violation. If the number read does not match the license plate, JetBot returns to the road and moves a certain distance, repeating this process for the first 5 parking spaces. If it cannot find the right match in all 5 parking spaces, it turns in the opposite direction at the end of the black line and repeats this process for 5 parking spaces. If it cannot find the number it is looking for after checking all parking spaces, the mobile application returns the message 'Parking Space Not Found'.
+
 
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
