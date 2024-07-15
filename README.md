@@ -45,7 +45,8 @@ Before the application starts running, the path tracking model is loaded into Je
  TCS34725 Color Sensors are two sensors used to detect red lines. It detects red line violations with its high-precision color detection feature.
 #### Samsung Evo Plus Class10 UHS-I U3 128GB Micro SD Card
  Samsung Evo Plus 128 GB Micro SD Card is used for operating system and data storage in Jetson Nano. It has high-speed data reading and writing capacity with Class10 and UHS-I U3 speed class.
-
+ 
+![image](https://github.com/user-attachments/assets/de262c03-df0b-45f5-a88c-9aaba4d76015)
 
 ## Installation
 Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
