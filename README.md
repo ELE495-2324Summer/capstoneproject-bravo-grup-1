@@ -10,7 +10,9 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Provide a brief overview of the project, its purpose, and what problem it aims to solve.
+- Bu projede Jetson Nano ile çalışan bir JetBot kullanarak otonom park eden bir araç geliştirmek amaçlamaktadır. JetBot’un kendisine tahsis edilen park yerini bulması ve platform üzerindeki kırmızı çizgilerin üzerinden geçmeden park etmesi sağlanacaktır. Sistemin hedefi, JetBot’un otonom olarak tahsis edilen park yerini bulabilmesi, belirtilen sınırlar içinde park edebilmesi ve her ihlalde telefondaki uygulamaya bir puan cezası (-1 puan) bildirerek park işlemi sonunda toplam ceza puanlarının takip edilebilmesini sağlamaktır.
+- Proje gereksinimleri ışığında her gruba bir plaka numarası ile beyaz karton platform üzerinde bir park yeri atanacaktır. Rastgele bir konumdan başlayan JetBot, kendisine tahsis edilen park yerini bulmalı ve üç dakika içinde kırmızı çizgilere dokunmadan park etmelidir. Başarılı park işleminin ardından, tamamlanma mesajı telefona iletilecektir. Eğer atanmış park yeri platformda yoksa, sistem telefona park yeri olmadığı bilgisini iletecektir. Demo sırasında, atanmış plaka numarası değiştirilerek park işlemi tekrarlanacaktır. Ayrıca, JetBot iki kez kırmızı çizgiyi ihlal ederek hareket ettirilip telefonda toplam ceza puanlarının görüntülenmesi sağlanacaktır.
+
 
 ## Features
 List the key features and functionalities of the project.
