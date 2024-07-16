@@ -94,8 +94,7 @@ pip install RPi.GPIO
 
 
 ## Usage
-Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
-
+This code is designed for TOBB University of Economics and Technology's 2024-2025 ELE495 course Final Project named as Parking with AI. It is specifically designed for the requirements of the project. The usage is limited to autonomous movement of Jetbot for finding its park plate and correctly parking in 3 minutes.
 
 ## Acknowledgements
 ### [Contributors]
