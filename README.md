@@ -49,8 +49,49 @@ Before the application starts running, the path tracking model is loaded into Je
 ![image](https://github.com/user-attachments/assets/de262c03-df0b-45f5-a88c-9aaba4d76015)
 
 ## Installation
-Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
+###Setting up Jetson Nano and assembling with Jetbot
+Assemble Jetson Nano with JEtbot. Write according image to MicroSD card and insert it Jetson Nano's slot. To work with headless set up, use MicroUsb cable and make Jetson Nano connect your internet. As Jetson Nano connects to internet, it shows an IP adress on its screen. Go to IPadress:8888 to reach JupyterLab. On JupyterLab we will use road following file to make our dataset and train our model for black line tracking and parking algorithms. 
+For the overall code, we need to install libraries.
+Flask for our communication with app:
+```
+pip install Flask
 
+```
+Torch2trt for TRTmodule:
+```
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt.git
+```
+Numpy:
+```
+pip install numpy
+```
+PIL.Image:
+```
+pip install pillow
+```
+Cv2:
+```
+pip install opencv-python
+pip install opencv-python-headless  # For systems without GUI support
+
+```
+Pytesseract:
+```
+sudo apt update
+sudo apt install -y tesseract-ocr
+pip install pytesseract
+```
+Smbus2:
+```
+sudo apt install -y i2c-tools
+pip install smbus2
+
+```
+RPi.GPIO:
+```
+pip install RPi.GPIO
+
+```
 ```bash
 # Example commands
 git clone https://github.com/username/project-name.git
