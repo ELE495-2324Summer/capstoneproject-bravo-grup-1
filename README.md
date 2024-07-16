@@ -6,7 +6,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -92,20 +91,24 @@ RPi.GPIO:
 pip install RPi.GPIO
 
 ```
-```bash
-# Example commands
-git clone https://github.com/username/project-name.git
-cd project-name
-```
+
 
 ## Usage
 Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
 
-## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
 
 ## Acknowledgements
-Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
+### [Contributors]
+```
+Ahmet Mevlüt Güneşer - github.com/
+Mehmet Emin Erdoğan - github.com/
+Murat Seymen Gencel - github.com/
+Mükremin Kerem Baloğlu - github.com/
+```
 
-[Contributor 1](https://github.com/user1)
-[Resource or Tool](https://www.nvidia.com)
+### [Resources]
+```
+[1] https://github.com/dusty-nv/jetson-inference
+[2] https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit
+[3] https://github.com/winter2897/Real-time-Auto-License-Plate-Recognition-with-Jetson-Nano
+```
