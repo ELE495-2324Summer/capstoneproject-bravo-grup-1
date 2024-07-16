@@ -1,6 +1,0 @@
-# Tüm metin dosyaları için satır sonu dönüşümleri
-* text=auto
-
-# Belirli dosya türleri için satır sonu dönüşümleri
-*.py text eol=lf
-*.ipynb text eol=lf
