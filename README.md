@@ -49,8 +49,8 @@ Before the application starts running, the path tracking model is loaded into Je
 ![image](https://github.com/user-attachments/assets/de262c03-df0b-45f5-a88c-9aaba4d76015)
 
 ## Installation
-###Setting up Jetson Nano and assembling with Jetbot
-Assemble Jetson Nano with JEtbot. Write according image to MicroSD card and insert it Jetson Nano's slot. To work with headless set up, use MicroUsb cable and make Jetson Nano connect your internet. As Jetson Nano connects to internet, it shows an IP adress on its screen. Go to IPadress:8888 to reach JupyterLab. On JupyterLab we will use road following file to make our dataset and train our model for black line tracking and parking algorithms. 
+### Setting up Jetson Nano and assembling with Jetbot
+Assemble Jetson Nano with Jetbot. Write according image to MicroSD card and insert it Jetson Nano's slot. To work with headless set up, use MicroUsb cable and make Jetson Nano connect your internet. As Jetson Nano connects to internet, it shows an IP adress on its screen. Go to IPadress:8888 to reach JupyterLab. On JupyterLab we will use road following file to make our dataset and train our model for black line tracking and parking algorithms. 
 For the overall code, we need to install libraries.
 Flask for our communication with app:
 ```
