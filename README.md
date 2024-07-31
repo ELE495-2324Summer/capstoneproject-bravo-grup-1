@@ -38,9 +38,13 @@ pip install RPi.GPIO  # RPi.GPIO
 ```
 ## Usage
 1- Download everything in the "code" folder to jetbot.
+
 2- Create an apk using the app_design_code.dart file and download this apk to your phone.
+
 3- Make sure your phone and jetbot are connected to the same internet.
+
 4- Run the app.py file.
+
 5- Enter the plate information in the apk application you created.
 
 ## Images
